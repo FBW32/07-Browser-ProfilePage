@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Put your details here!</legend>
+
+        <label>Put your name here</label>
+        <input type="text" id="name" />
+
+        <label>Put your birthday here</label>
+        <input type="date" id="date" />
+
+        <label>Upload a photo of yours</label>
+        <input type="file" id="img" /><br />
+
+        <label>Pick your favorite color</label>
+        <input id="primaryColor" type="color" id="primaryColor" /><br />
+
+        <label>Pick your secondary color</label>
+        <input id="secondaryColor" type="color" /><br />
+
+        <textarea
+          placeholder="Write a paragraph about yourself"
+          maxlength="140"
+          id="about"
+        ></textarea>
+        <p class="countermessage">Type all you need in 140 characters</p>
+
+        <label>Pick your Skills: </label><br />
+
+        <li><input type="checkbox" class="javascript" />JavaScript</li>
+        <li><input type="checkbox" class="ruby" />Ruby</li>
+        <li><input type="checkbox" class="python" />Python</li>
+        <li><input type="checkbox" class="java" />Java</li>
+        <li><input type="checkbox" class="php" />PHP</li>
+      </fieldset>
+      <button type="button" id="createCV">Create CV</button>
+      <button type="button" id="resetForm">Reset form</button>
+    </form>
+    <section id="cv" style="visibility: hidden">
+      <button id="closeButton">X</button>
+      <p id="userName"></p>
+      <p id="age"></p>
+      <img id="userImage" />
+      <p id="aboutUser"></p>
+      <p id="cvSkills"></p>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+</html>
