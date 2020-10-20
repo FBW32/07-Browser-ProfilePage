@@ -75,6 +75,10 @@ let createProfile=()=>{
     closeButton.innerHTML="X";
     closeButton.classList.add("closeButton")
 
+    closeButton.addEventListener("click",()=>{
+        div.style.display="none"
+    })
+
 
     div.append(closeButton,h1,h2,img,h3,para);
     body.append(div);
